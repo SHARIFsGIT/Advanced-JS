@@ -6,6 +6,7 @@ inception();
 
 
 
+
 // call stack: global execution -> call add() 
 // FIFO: 1. add() --> 2. main [main wont remove]
 const add = (a, b) => {
@@ -13,6 +14,7 @@ const add = (a, b) => {
 };
 const result = add(2, 2);
 console.log(result);
+
 
 
 
@@ -25,6 +27,8 @@ const calculate = () => {
     return add(2, 2);
 };
 calculate();
+
+
 
 
 
